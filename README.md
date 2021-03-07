@@ -7,10 +7,14 @@ Sunday March, 7 2021
 Post Your Work on Github - UDacity
 
 ### Description
-Describe what your project is about and what it does
+Project is final project of Programming for Data Science with Python Nanodegree.
+Project focuses on using Git and a remote repository on Github.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+bikeshare_2_v2.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Project was forked from udacity/pdsnd_github
