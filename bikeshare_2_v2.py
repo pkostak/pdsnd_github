@@ -26,7 +26,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
         # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-        city = input('Please choose a Chicago, New York City, or Washington: ').lower()
+        city = input('Please choose Chicago, New York City, or Washington: ').lower()
         if city in CITY_DATA.keys():
             break
         else:
@@ -34,7 +34,7 @@ def get_filters():
 
     while True:
         # get user input for month (all, january, february, ... , june)
-        month = input('Please choose one of the first six months or "all" for all months: ').lower()
+        month = input('Please choose one of the first six months or "all" for all six months: ').lower()
         if month in months:
             break
         else:
