@@ -2,14 +2,15 @@ import time
 import pandas as pd
 import numpy as np
 
+#Set up dictionary with city names as key and city csv data files as values
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+
+#Set up lists of months, days, and possible responses
 months = ['all','january', 'february', 'march', 'april', 'may', 'june']
-
 days = ['all','monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-
 responses = ['yes', 'y', 'no', 'n']
 
 
