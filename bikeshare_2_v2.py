@@ -95,15 +95,15 @@ def time_stats(df):
 
     # display the most common month
     common_month = df['month'].mode()[0]
-    print('The most common rental month is ' + common_month)
+    print('The most common rental month is {}'.format(common_month))
 
     # display the most common day of week
     common_day = df['day_of_week'].mode()[0]
-    print('The most common rental day is ' + common_day)
+    print('The most common rental day is {}'.format(common_day))
 
     # display the most common start hour
     common_hour = df['hour'].mode()[0]
-    print('The most common rental hour is ' + str(common_hour))
+    print('The most common rental hour is {}'.format(common_hour))
     print()
 
     print("\nThis took %s seconds." % (time.time() - start_time))
