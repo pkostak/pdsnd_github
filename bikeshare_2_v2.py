@@ -96,15 +96,15 @@ def time_stats(df):
 
     # display the most common month
     common_month = df['month'].mode()[0]
-    print('The most common rental month is ' + common_month)
+    print('The most common rental month is {}'.format(common_month))
 
     # display the most common day of week
     common_day = df['day_of_week'].mode()[0]
-    print('The most common rental day is ' + common_day)
+    print('The most common rental day is {}'.format(common_day))
 
     # display the most common start hour
     common_hour = df['hour'].mode()[0]
-    print('The most common rental hour is ' + str(common_hour))
+    print('The most common rental hour is {}'.format(common_hour))
     print()
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -119,18 +119,18 @@ def station_stats(df):
 
     # display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
-    print('The most common start station is ' + common_start_station)
+    print('The most common start station is {}'.format(common_start_station))
 
     # display most commonly used end station
     common_end_station = df['End Station'].mode()[0]
-    print('The most common end station is ' + common_end_station)
+    print('The most common end station is {}'.format(common_end_station))
     print()
 
     # display most frequent combination of start station and end station trip
     start_end_station = 'Start: ' + df['Start Station'] + ' & End: ' + df['End Station']
     df['Start End Stations'] = start_end_station
     common_stations = df['Start End Stations'].mode()[0]
-    print('The most common combination of stations is ' + common_stations)
+    print('The most common combination of stations is {}'.format(common_stations))
     print()
 
     print("\nThis took %s seconds." % (time.time() - start_time))
